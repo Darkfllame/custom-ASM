@@ -1,0 +1,76 @@
+Variable assignement--------------------------------------------------------------------------------------------------
+
+set <var> <var/number/string/bool>                                  --create or set a variable with name <1> and value <2>
+free <var>                                                          --free memory from var <1>
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+Memory assignement (for funtions)-------------------------------------------------------------------------------------
+
+set <number> <var/number/string/bool>                               --set the memory emplacment <1> to <2>
+get <number> <var>                                                  --get the value of memory emplacement <1> and set <2> to it
+free <number>                                                       --free memory emplacement <1>
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+Variable arythmetic---------------------------------------------------------------------------------------------------
+
+add <var/number/string/bool> <var/number/string/bool> <var>         --add <1> and <2> and store it to <3>
+sub <var/number/string/bool> <var/number/string/bool> <var>         --substract <2> to <1> and store it to <3>
+mul <var/number/string/bool> <var/number/string/bool> <var>         --multiply <1> by <2> and store it to <3>
+div <var/number/string/bool> <var/number/string/bool> <var>         --divide <1> by <2> and store it to <3>
+pow <var/number/string/bool> <var/number/string/bool> <var>         --power <1> by <2> and store it to <3>
+sqrt <var/number/string/bool> <var>                                 --find the square root or <1> and store it to <2>
+
+----------------------------------------------------------------------------------------------------------------------
+
+String manipulation---------------------------------------------------------------------------------------------------
+
+concat <var/number/string/bool> <var/number/string/bool> <var>      --concatenate <1> and <2> and store it to <3>
+strsub <var/string> <var/number> <var/number> <var>                 --store a substring of <1> starting from <2> to <3> to <4>
+strlen <var/string> <var>                                           --store the lenght of <1> to <2>
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+IO--------------------------------------------------------------------------------------------------------------------
+
+out <var/number/string/bool>                                        --print <1> to console
+in <var>                                                            --yield code to store input from console to <1>
+read <var/string> <var>                                             --read a file with name <1> and store it's content into <2>
+readln <var/string> <var/number> <var>                              --like read but only line <2>
+write <var/string> <var/string>                                     --write <2> to file <1>
+append <var/string> <var/string>                                    --like write but do not overwrite
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+Function management---------------------------------------------------------------------------------------------------
+
+func <func>                                                         --declare a function with name <1>
+endfunc                                                             --end the function <1>
+call <func>                                                         --call a function named <1>
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+Misc------------------------------------------------------------------------------------------------------------------
+
+jmp <var/bool> <var/number>                                         --conditional if <1> jump to line <2>
+eq <var/number/string/bool> <var/number/string/bool> <var>          --equal operator, store resule int <3>
+ls <var/number/string/bool> <var/number/string/bool> <var>          --less than operator, store resule int <3>
+mr <var/number/string/bool> <var/number/string/bool> <var>          --more than operator, store resule int <3>
+not <var/number/string/bool> <var>                                  --not operator, store resule int <2>
+or <var/number/string/bool> <var/number/string/bool> <var>          --or operator, store resule int <3>
+and <var/number/string/bool> <var/number/string/bool> <var>         --and operator, store resule int <3>
+exit <number>                                                       --exit operation, close program with exit code <1>
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+var types :
+    number (string -> int)
+    "string" (string)
+    bool : true/false (string -> bool)
